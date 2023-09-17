@@ -1,13 +1,18 @@
-import React from "react";
 import { more, pricing } from "../../assets/assets";
 import Button from "../../components/Button";
+import Reveal from "../../components/Reveal";
 
 const About = () => {
    return (
-      <div className="text-center mb-[150px] justify-center md:text-start md:justify-start">
+      <div
+         id="about"
+         className="text-center mb-[150px] justify-center md:text-start md:justify-start"
+      >
          <div className="grid gap-5 grid-cols-1 md:grid-cols-2 mb-[100px]">
             <div>
-               <img src={pricing} alt="" />
+               <Reveal>
+                  <img src={pricing} alt="" />
+               </Reveal>
             </div>
             <div>
                <div className="text-lg">
@@ -25,7 +30,9 @@ const About = () => {
 
          <div className="grid gap-5 grid-cols-1 md:grid-cols-2">
             <div className="md:order-2">
-               <img src={more} className="s" alt="" />
+               <Reveal>
+                  <img src={more} className="s" alt="" />
+               </Reveal>
             </div>
             <div className="">
                <div className="text-lg">
